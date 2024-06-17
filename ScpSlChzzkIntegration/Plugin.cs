@@ -26,8 +26,8 @@ namespace ScpSlChzzkIntegration
             Chzzk.ConnectChzzk(Config.ChzzkChannelId);
 
             EventHandler = new EventHandler(this);
-            Chzzk.onMessage += EventHandler.OnMessage;
-            Chzzk.onDonation += EventHandler.OnDonation;
+            Chzzk.OnMessage += EventHandler.OnMessage;
+            Chzzk.OnDonation += EventHandler.OnDonation;
         }
 
         public override void OnDisabled()
