@@ -48,7 +48,7 @@ namespace ScpSlChzzkIntegration
             { EventType.DetonateWarhead, "핵탄두를 폭파시키시랍니다!" },
             { EventType.Lockdown, "봉쇄시키시랍니다!" },
             { EventType.Blackout, "정전시키시랍니다!" },
-            { EventType.Ensnared, "움직임을 멈추시랍니다!" },
+            { EventType.Ensnared, "움직임을 멈추시랍니다!" }
         };
 
         [Description("후원 자막의 포맷을 설정합니다.")]

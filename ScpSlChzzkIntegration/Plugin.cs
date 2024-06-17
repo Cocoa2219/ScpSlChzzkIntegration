@@ -1,6 +1,7 @@
 ﻿using System;
 using Exiled.API.Features;
 using ScpSlChzzkIntegration.API;
+using Player = Exiled.Events.Handlers.Player;
 
 namespace ScpSlChzzkIntegration
 {

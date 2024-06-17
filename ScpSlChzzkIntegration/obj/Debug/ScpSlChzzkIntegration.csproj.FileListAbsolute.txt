@@ -232,3 +232,5 @@ C:\Users\user\Documents\ScpSlChzzkIntegration\ScpSlChzzkIntegration\obj\Debug\Sc
 C:\Users\user\Documents\ScpSlChzzkIntegration\ScpSlChzzkIntegration\obj\Debug\ScpSlChzzkIntegration.pdb
 C:\Users\user\Documents\ScpSlChzzkIntegration\ScpSlChzzkIntegration\bin\Debug\Mirror.Components.dll
 C:\Users\user\Documents\ScpSlChzzkIntegration\ScpSlChzzkIntegration\bin\Debug\Mirror.dll
+C:\Users\PC\Documents\ScpSlChzzkIntegration\ScpSlChzzkIntegration\bin\Debug\Mirror.Components.dll
+C:\Users\PC\Documents\ScpSlChzzkIntegration\ScpSlChzzkIntegration\bin\Debug\Mirror.dll

@@ -346,7 +346,7 @@ public class Chzzk
             if (!_running) continue;
             if (_socket is { IsAlive: true }) _socket.Send(HeartbeatRequest);
 
-            Log.Debug("[치지직] Heartbeat 전송");
+            Log.Debug("[치지직] ------------ Heartbeat 전송 ------------");
         }
     }
 

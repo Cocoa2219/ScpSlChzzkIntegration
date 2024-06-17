@@ -23,8 +23,7 @@
         <DefineConstants>DEBUG;TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
-        <PostBuildEvent>xcopy /y /s /i /d "C:\Users\user\Documents\ScpSlChzzkIntegration\ScpSlChzzkIntegration\bin\Debug\ScpSlChzzkIntegration.dll" "C:\Users\user\AppData\Roaming\EXILED\Plugins"</PostBuildEvent>
-
+        <PostBuildEvent>xcopy /y /s /i /d "C:\Users\PC\Documents\ScpSlChzzkIntegration\ScpSlChzzkIntegration\bin\Debug\ScpSlChzzkIntegration.dll" "C:\Users\PC\AppData\Roaming\EXILED\Plugins"</PostBuildEvent>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>

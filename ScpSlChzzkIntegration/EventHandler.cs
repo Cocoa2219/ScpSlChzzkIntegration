@@ -56,7 +56,6 @@ public class EventHandler(Plugin plugin)
         return eventTypes[closestKey];
     }
 
-
     private void DonationEvent(Profile profile, string msg, DonationExtras extras)
     {
         if (Target == null)
@@ -126,7 +125,13 @@ public class EventHandler(Plugin plugin)
 
     private void BringRandomScp()
     {
-        var scp = Player.Get(Team.SCPs).GetRandomValue();
+        var scps = Player.Get(Team.SCPs).ToList();
+
+        if (scps.Count == 0)
+            return;
+
+        var scp = scps[UnityEngine.Random.Range(0, scps.Count)];
+
         var pos = Target.Position + new Vector3(0, 0.5f, 0);
 
         scp.Position = pos;
