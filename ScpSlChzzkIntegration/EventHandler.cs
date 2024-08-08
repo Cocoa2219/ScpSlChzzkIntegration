@@ -59,7 +59,10 @@ public class EventHandler(Plugin plugin)
     private void DonationEvent(Profile profile, string msg, DonationExtras extras)
     {
         if (Target == null)
+        {
+            Log.Warn("타겟이 설정되지 않았습니다! RA에서 settarget 명령어를 사용해 타겟을 설정해주세요.");
             return;
+        }
 
         var amount = extras.payAmount;
         var nickname = profile?.nickname ?? "익명의 후원자";
@@ -75,7 +78,7 @@ public class EventHandler(Plugin plugin)
 
             var message = string.Format(format, nickname, amount, subtitle, msg);
 
-            Map.Broadcast(5, message);
+            Map.Broadcast(5, message, Broadcast.BroadcastFlags.Normal, true);
         }
 
         switch (eventType.Value)
@@ -110,8 +113,10 @@ public class EventHandler(Plugin plugin)
             case EventType.Ensnared:
                 Ensnared();
                 break;
+            case EventType.BringRandomPlayer:
+                BringRandomPlayer();
+                break;
         }
-
     }
 
     private void Bomb()
@@ -187,5 +192,27 @@ public class EventHandler(Plugin plugin)
     private void Ensnared()
     {
         Target.EnableEffect(EffectType.Ensnared, Plugin.Config.EventConfig.Ensnared.Duration);
+    }
+
+    private void BringRandomPlayer()
+    {
+        var players = Player.List.ToList();
+
+        if (players.Count == 0)
+            return;
+
+        var player = players[UnityEngine.Random.Range(0, players.Count)];
+
+        player.Position = Target.Position + new Vector3(0, 0.5f, 0);
+    }
+
+    private void SetRandomHuman()
+    {
+
+    }
+
+    private void SetRandomScp()
+    {
+
     }
 }

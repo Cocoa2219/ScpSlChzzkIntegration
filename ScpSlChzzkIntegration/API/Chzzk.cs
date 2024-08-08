@@ -405,4 +405,9 @@ public class Chzzk
 
         callback(accessTokenResult);
     }
+
+    private void Reconnect(string channelId)
+    {
+
+    }
 }

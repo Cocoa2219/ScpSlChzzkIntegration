@@ -28,12 +28,13 @@ namespace ScpSlChzzkIntegration
             { 10000, EventType.Ensnared },
             { 15000, EventType.DeleteRandomItem },
             { 20000, EventType.DropAllItem },
+            { 25000, EventType.BringRandomPlayer },
             { 30000, EventType.Blackout },
             { 40000, EventType.Lockdown },
             { 50000, EventType.BringRandomScp },
             { 70000, EventType.BringAllPlayers },
             { 80000, EventType.StartWarhead },
-            { 100000, EventType.DetonateWarhead },
+            { 100000, EventType.DetonateWarhead }
         };
 
         [Description("후원 시 자막을 설정합니다.")]
@@ -48,10 +49,11 @@ namespace ScpSlChzzkIntegration
             { EventType.DetonateWarhead, "핵탄두를 폭파시키시랍니다!" },
             { EventType.Lockdown, "봉쇄시키시랍니다!" },
             { EventType.Blackout, "정전시키시랍니다!" },
-            { EventType.Ensnared, "움직임을 멈추시랍니다!" }
+            { EventType.Ensnared, "움직임을 멈추시랍니다!" },
+            { EventType.BringRandomPlayer, "랜덤 플레이어를 데려오시랍니다!" }
         };
 
-        [Description("후원 자막의 포맷을 설정합니다.")]
+        [Description("후원 자막의 포맷을 설정합니다. - {0}: 후원자 닉네임, {1}: 후원 금액, {2}: 이벤트 자막 (위 EventSubtitles), {3}: 후원 메시지")]
         public string EventSubtitleFormat { get; set; } = "<b><size=30>{0}</b>님이 {1}원으로 <b>{2}</b>\n{3}</size>";
 
         [Description("폭탄 관련 이벤트를 설정합니다.")]
@@ -79,6 +81,7 @@ namespace ScpSlChzzkIntegration
         Lockdown,
         Blackout,
         Ensnared,
+        BringRandomPlayer
     }
 
     public class BombConfig
