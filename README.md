@@ -23,4 +23,4 @@
 ### Credits
 유튜버 각별님의 영상 (https://youtu.be/LSzwtXM6WFo?si=ddTcJgPy0ICa-aYf) 에서 영감을 얻었습니다.
 
-JoKangHyeon님의 코드를 상당히 참고했습니다. (https://github.com/JoKangHyeon/ChzzkUnity) ~~(솔직히 코드 가져와서 SL로 포팅한 수준입니다)~~
+JoKangHyeon님의 코드를 상당히 참고했습니다. (https://github.com/JoKangHyeon/ChzzkUnity) ~~(솔직히 코드 복붙해서 SL로 포팅한 수준입니다)~~
